@@ -39,6 +39,18 @@ wwv_flow_imp_shared.create_menu_option(
 ,p_link=>'f?p=&APP_ID.:10:&APP_SESSION.::&DEBUG.:::'
 ,p_page_id=>10
 );
+wwv_flow_imp_shared.create_menu_option(
+ p_id=>wwv_flow_imp.id(5038925061868512)
+,p_short_name=>'Detail Client'
+,p_link=>'f?p=&APP_ID.:11:&APP_SESSION.::&DEBUG.:::'
+,p_page_id=>11
+);
+wwv_flow_imp_shared.create_menu_option(
+ p_id=>wwv_flow_imp.id(5047933727893215)
+,p_short_name=>'Ajouter Client'
+,p_link=>'f?p=&APP_ID.:12:&APP_SESSION.::&DEBUG.:::'
+,p_page_id=>12
+);
 wwv_flow_imp.component_end;
 end;
 /

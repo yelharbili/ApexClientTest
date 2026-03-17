@@ -124,6 +124,8 @@ prompt --install
 @@application/pages/page_00003.sql
 @@application/pages/page_00004.sql
 @@application/pages/page_00010.sql
+@@application/pages/page_00011.sql
+@@application/pages/page_00012.sql
 @@application/pages/page_09999.sql
 @@application/deployment/definition.sql
 @@application/deployment/checks.sql
