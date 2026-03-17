@@ -1,0 +1,22 @@
+# Oracle
+*.log
+*.trc
+*.dmp
+
+# Fichiers temporaires
+query_*_out.txt
+test_apis_out*.txt
+test_apis_utf8.txt
+*.tmp
+
+# OS
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# Scratch files
+check_ords.sql
+check_ords_out.txt
+kill_ords_sessions.sql
+query_*.sql
+premium_profile_exact.html

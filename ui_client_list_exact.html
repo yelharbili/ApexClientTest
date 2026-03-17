@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion du Référentiel Clients</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8fafc;
+            font-family: 'Inter', sans-serif;
+            color: #1e293b;
+            margin: 0;
+            padding: 60px 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .page-container {
+            width: 100%;
+            max-width: 900px;
+        }
+
+        .header-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 24px;
+        }
+
+        .page-title {
+            font-size: 24px;
+            font-weight: 500;
+            color: #0f172a;
+            margin: 0;
+        }
+
+        .btn-add {
+            background-color: #534bdf;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 500;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.2s;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .btn-add:hover {
+            background-color: #4338ca;
+        }
+
+        .report-card {
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+            border: 1px solid #e2e8f0;
+            overflow: hidden;
+            padding: 8px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+        }
+
+        th {
+            padding: 16px 24px;
+            font-size: 11px;
+            font-weight: 500;
+            color: #64748b;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            border-bottom: 1px solid #f1f5f9;
+        }
+
+        td {
+            padding: 18px 24px;
+            font-size: 13px;
+            color: #0f172a;
+            border-bottom: 1px solid #f1f5f9;
+            vertical-align: middle;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 500;
+            text-align: center;
+            min-width: 60px;
+        }
+
+        .badge-actif {
+            background-color: #ecfdf5;
+            color: #10b981;
+            border: 1px solid #a7f3d0;
+        }
+
+        .badge-suspendu {
+            background-color: #fef2f2;
+            color: #ef4444;
+            border: 1px solid #fecaca;
+        }
+
+        .actions {
+            display: flex;
+            gap: 16px;
+        }
+
+        .action-link {
+            font-size: 11px;
+            font-weight: 500;
+            text-decoration: none;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+
+        .action-modifier {
+            color: #534bdf;
+        }
+
+        .action-modifier:hover {
+            color: #4338ca;
+            text-decoration: underline;
+        }
+
+        .action-suppr {
+            color: #ef4444;
+        }
+
+        .action-suppr:hover {
+            color: #dc2626;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="page-container">
+    <div class="header-section">
+        <h1 class="page-title">Gestion du Référentiel Clients</h1>
+        <button class="btn-add">+ AJOUTER</button>
+    </div>
+
+    <div class="report-card">
+        <table>
+            <thead>
+                <tr>
+                    <th>CODE</th>
+                    <th>NOM ET PRENOM</th>
+                    <th>VILLE</th>
+                    <th>STATUT</th>
+                    <th>ACTIONS</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>CLI-001</td>
+                    <td>Mohammed BENALI</td>
+                    <td>Casablanca</td>
+                    <td><span class="badge badge-actif">ACTIF</span></td>
+                    <td class="actions">
+                        <a href="#" class="action-link action-modifier">MODIFIER</a>
+                        <a href="#" class="action-link action-suppr">SUPPR.</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>CLI-002</td>
+                    <td>Fatima ELMOUSSAOUI</td>
+                    <td>Rabat</td>
+                    <td><span class="badge badge-actif">ACTIF</span></td>
+                    <td class="actions">
+                        <a href="#" class="action-link action-modifier">MODIFIER</a>
+                        <a href="#" class="action-link action-suppr">SUPPR.</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>CLI-003</td>
+                    <td>Youssef TAZI</td>
+                    <td>Marrakech</td>
+                    <td><span class="badge badge-actif">ACTIF</span></td>
+                    <td class="actions">
+                        <a href="#" class="action-link action-modifier">MODIFIER</a>
+                        <a href="#" class="action-link action-suppr">SUPPR.</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>CLI-004</td>
+                    <td>SOCIETE ATLAS</td>
+                    <td>Casablanca</td>
+                    <td><span class="badge badge-suspendu">SUSPENDU</span></td>
+                    <td class="actions">
+                        <a href="#" class="action-link action-modifier">MODIFIER</a>
+                        <a href="#" class="action-link action-suppr">SUPPR.</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- ========================================== -->
+<!-- INTEGRATION APEX (CLASSIC REPORT TEMPLATE) -->
+<!-- ========================================== -->
+<!-- 
+Dans Shared Components > Templates > Create > Report > From Scratch :
+Name: Custom List Clients
+Class: Custom 1
+>> Before Rows : 
+<div class="report-card">
+    <table>
+        <thead>
+            <tr>
+                <th>CODE</th>
+                <th>NOM ET PRENOM</th>
+                <th>VILLE</th>
+                <th>STATUT</th>
+                <th>ACTIONS</th>
+            </tr>
+        </thead>
+        <tbody>
+>> Column Templates / Row Template 1 :
+            <tr>
+                <td>#CODE_CLIENT#</td>
+                <td>#NOM_PRENOM#</td>
+                <td>#VILLE#</td>
+                <td><span class="badge badge-#STATUT_CSS_CLASS#">#STATUT#</span></td>
+                <td class="actions">
+                    <a href="#MODIFIER_LINK#" class="action-link action-modifier">MODIFIER</a>
+                    <a href="#SUPPRIMER_LINK#" class="action-link action-suppr">SUPPR.</a>
+                </td>
+            </tr>
+>> After Rows :
+        </tbody>
+    </table>
+</div>
+
+Pour la structure globale avec le Titre et Bouton "Ajouter", utiliser une Région "Static Content" au-dessus du rapport classique avec le Container Header.
+Mettre le CSS dans Page > CSS > Inline.
+-->
+
+</body>
+</html>

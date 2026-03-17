@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmation Suppression</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8fafc;
+            font-family: 'Inter', sans-serif;
+            color: #1e293b;
+            margin: 0;
+            padding: 80px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .modal-card {
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+            border: 1px solid #e2e8f0;
+            width: 100%;
+            max-width: 550px;
+            padding: 24px 32px 40px 32px;
+            text-align: center;
+        }
+
+        .alert-banner {
+            background-color: #fef2f2;
+            color: #ef4444;
+            padding: 14px;
+            border: 1px solid #fecaca;
+            border-radius: 4px;
+            font-size: 13px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.02em;
+            margin-bottom: 32px;
+        }
+
+        .modal-title {
+            font-size: 22px;
+            font-weight: 400;
+            color: #0f172a;
+            margin: 0 0 8px 0;
+        }
+
+        .modal-text {
+            font-size: 14px;
+            color: #64748b;
+            margin: 0 0 40px 0;
+            line-height: 1.5;
+        }
+
+        .modal-actions {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+        }
+
+        .btn-no {
+            padding: 12px 60px;
+            border-radius: 6px;
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            color: #64748b;
+            font-size: 14px;
+            font-weight: 400;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .btn-no:hover {
+            background: #f1f5f9;
+        }
+
+        .btn-yes {
+            padding: 12px 60px;
+            border-radius: 6px;
+            background: #ef4444;
+            border: none;
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: 400;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        .btn-yes:hover {
+            background: #dc2626;
+        }
+    </style>
+</head>
+<body>
+
+<div class="modal-card">
+    <div class="alert-banner">
+        ATTENTION : ACTION IRREVERSIBLE
+    </div>
+    
+    <h2 class="modal-title">Supprimer cet enregistrement ?</h2>
+    <p class="modal-text">Voulez-vous vraiment supprimer cet élément ?<br>L'action sera immédiatement répercutée en base.</p>
+    
+    <div class="modal-actions">
+        <button class="btn-no">NON</button>
+        <button class="btn-yes">OUI</button>
+    </div>
+</div>
+
+<!-- ========================================== -->
+<!-- INTEGRATION APEX (MODAL DIALOG / ALERTS) -->
+<!-- ========================================== -->
+<!--
+Dans APEX, vous pouvez utiliser une Région de type "Static Content" dans une page Modale ou un message de confirmation de suppression customisé.
+Mettez le code CSS ci-dessus dans la propriété "Inline" CSS de la page modale.
+-->
+
+</body>
+</html>

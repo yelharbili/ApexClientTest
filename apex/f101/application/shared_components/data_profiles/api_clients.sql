@@ -1,0 +1,119 @@
+prompt --application/shared_components/data_profiles/api_clients
+begin
+--   Manifest
+--     DATA PROFILE: API_Clients
+--   Manifest End
+wwv_flow_imp.component_begin (
+ p_version_yyyy_mm_dd=>'2023.10.31'
+,p_release=>'23.2.0'
+,p_default_workspace_id=>3628745592366285
+,p_default_application_id=>101
+,p_default_id_offset=>0
+,p_default_owner=>'ORASSADM'
+);
+wwv_flow_imp_shared.create_data_profile(
+ p_id=>wwv_flow_imp.id(4446560384650900)
+,p_name=>'API_Clients'
+,p_format=>'JSON'
+);
+wwv_flow_imp_shared.create_data_profile_col(
+ p_id=>wwv_flow_imp.id(4446733147650971)
+,p_data_profile_id=>wwv_flow_imp.id(4446560384650900)
+,p_name=>'NOM'
+,p_sequence=>1
+,p_column_type=>'DATA'
+,p_data_type=>'VARCHAR2'
+,p_max_length=>4000
+,p_has_time_zone=>false
+,p_selector=>'nom'
+);
+wwv_flow_imp_shared.create_data_profile_col(
+ p_id=>wwv_flow_imp.id(4447055702650978)
+,p_data_profile_id=>wwv_flow_imp.id(4446560384650900)
+,p_name=>'ACTIF'
+,p_sequence=>2
+,p_column_type=>'DATA'
+,p_data_type=>'VARCHAR2'
+,p_max_length=>4000
+,p_has_time_zone=>false
+,p_selector=>'actif'
+);
+wwv_flow_imp_shared.create_data_profile_col(
+ p_id=>wwv_flow_imp.id(4447316356650981)
+,p_data_profile_id=>wwv_flow_imp.id(4446560384650900)
+,p_name=>'EMAIL'
+,p_sequence=>3
+,p_column_type=>'DATA'
+,p_data_type=>'VARCHAR2'
+,p_max_length=>4000
+,p_has_time_zone=>false
+,p_selector=>'email'
+);
+wwv_flow_imp_shared.create_data_profile_col(
+ p_id=>wwv_flow_imp.id(4447619512650982)
+,p_data_profile_id=>wwv_flow_imp.id(4446560384650900)
+,p_name=>'VILLE'
+,p_sequence=>4
+,p_column_type=>'DATA'
+,p_data_type=>'VARCHAR2'
+,p_max_length=>4000
+,p_has_time_zone=>false
+,p_selector=>'ville'
+);
+wwv_flow_imp_shared.create_data_profile_col(
+ p_id=>wwv_flow_imp.id(4447995779650984)
+,p_data_profile_id=>wwv_flow_imp.id(4446560384650900)
+,p_name=>'PRENOM'
+,p_sequence=>5
+,p_column_type=>'DATA'
+,p_data_type=>'VARCHAR2'
+,p_max_length=>4000
+,p_has_time_zone=>false
+,p_selector=>'prenom'
+);
+wwv_flow_imp_shared.create_data_profile_col(
+ p_id=>wwv_flow_imp.id(4448240832650985)
+,p_data_profile_id=>wwv_flow_imp.id(4446560384650900)
+,p_name=>'ID_CLIENT'
+,p_sequence=>6
+,p_column_type=>'DATA'
+,p_data_type=>'NUMBER'
+,p_has_time_zone=>false
+,p_selector=>'id_client'
+);
+wwv_flow_imp_shared.create_data_profile_col(
+ p_id=>wwv_flow_imp.id(4448587063650998)
+,p_data_profile_id=>wwv_flow_imp.id(4446560384650900)
+,p_name=>'TELEPHONE'
+,p_sequence=>7
+,p_column_type=>'DATA'
+,p_data_type=>'VARCHAR2'
+,p_max_length=>4000
+,p_has_time_zone=>false
+,p_selector=>'telephone'
+);
+wwv_flow_imp_shared.create_data_profile_col(
+ p_id=>wwv_flow_imp.id(4448892335651000)
+,p_data_profile_id=>wwv_flow_imp.id(4446560384650900)
+,p_name=>'CODE_CLIENT'
+,p_sequence=>8
+,p_column_type=>'DATA'
+,p_data_type=>'VARCHAR2'
+,p_max_length=>4000
+,p_has_time_zone=>false
+,p_selector=>'code_client'
+);
+wwv_flow_imp_shared.create_data_profile_col(
+ p_id=>wwv_flow_imp.id(4449187430651003)
+,p_data_profile_id=>wwv_flow_imp.id(4446560384650900)
+,p_name=>'TYPE_CLIENT'
+,p_sequence=>9
+,p_column_type=>'DATA'
+,p_data_type=>'VARCHAR2'
+,p_max_length=>4000
+,p_has_time_zone=>false
+,p_selector=>'type_client'
+);
+wwv_flow_imp.component_end;
+end;
+/

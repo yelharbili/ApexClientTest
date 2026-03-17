@@ -1,0 +1,86 @@
+prompt --application/shared_components/data_profiles/api_branches
+begin
+--   Manifest
+--     DATA PROFILE: API_BRANCHES
+--   Manifest End
+wwv_flow_imp.component_begin (
+ p_version_yyyy_mm_dd=>'2023.10.31'
+,p_release=>'23.2.0'
+,p_default_workspace_id=>3628745592366285
+,p_default_application_id=>101
+,p_default_id_offset=>0
+,p_default_owner=>'ORASSADM'
+);
+wwv_flow_imp_shared.create_data_profile(
+ p_id=>wwv_flow_imp.id(4138898640023329)
+,p_name=>'API_BRANCHES'
+,p_format=>'JSON'
+);
+wwv_flow_imp_shared.create_data_profile_col(
+ p_id=>wwv_flow_imp.id(4139013826023339)
+,p_data_profile_id=>wwv_flow_imp.id(4138898640023329)
+,p_name=>'ACTIF'
+,p_sequence=>1
+,p_column_type=>'DATA'
+,p_data_type=>'VARCHAR2'
+,p_max_length=>4000
+,p_has_time_zone=>false
+,p_selector=>'actif'
+);
+wwv_flow_imp_shared.create_data_profile_col(
+ p_id=>wwv_flow_imp.id(4139332593023340)
+,p_data_profile_id=>wwv_flow_imp.id(4138898640023329)
+,p_name=>'LIBELLE'
+,p_sequence=>2
+,p_column_type=>'DATA'
+,p_data_type=>'VARCHAR2'
+,p_max_length=>4000
+,p_has_time_zone=>false
+,p_selector=>'libelle'
+);
+wwv_flow_imp_shared.create_data_profile_col(
+ p_id=>wwv_flow_imp.id(4139663882023340)
+,p_data_profile_id=>wwv_flow_imp.id(4138898640023329)
+,p_name=>'ID_BRANCHE'
+,p_sequence=>3
+,p_column_type=>'DATA'
+,p_data_type=>'NUMBER'
+,p_has_time_zone=>false
+,p_selector=>'id_branche'
+);
+wwv_flow_imp_shared.create_data_profile_col(
+ p_id=>wwv_flow_imp.id(4139921495023340)
+,p_data_profile_id=>wwv_flow_imp.id(4138898640023329)
+,p_name=>'DESCRIPTION'
+,p_sequence=>4
+,p_column_type=>'DATA'
+,p_data_type=>'VARCHAR2'
+,p_max_length=>4000
+,p_has_time_zone=>false
+,p_selector=>'description'
+);
+wwv_flow_imp_shared.create_data_profile_col(
+ p_id=>wwv_flow_imp.id(4140240377023342)
+,p_data_profile_id=>wwv_flow_imp.id(4138898640023329)
+,p_name=>'CODE_BRANCHE'
+,p_sequence=>5
+,p_column_type=>'DATA'
+,p_data_type=>'VARCHAR2'
+,p_max_length=>4000
+,p_has_time_zone=>false
+,p_selector=>'code_branche'
+);
+wwv_flow_imp_shared.create_data_profile_col(
+ p_id=>wwv_flow_imp.id(4140547931023342)
+,p_data_profile_id=>wwv_flow_imp.id(4138898640023329)
+,p_name=>'DATE_CREATION'
+,p_sequence=>6
+,p_column_type=>'DATA'
+,p_data_type=>'DATE'
+,p_format_mask=>'YYYY"-"MM"-"DD'
+,p_has_time_zone=>false
+,p_selector=>'date_creation'
+);
+wwv_flow_imp.component_end;
+end;
+/

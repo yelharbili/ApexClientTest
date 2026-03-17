@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajouter un Nouveau Client</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8fafc;
+            font-family: 'Inter', sans-serif;
+            color: #1e293b;
+            margin: 0;
+            padding: 60px 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .page-container {
+            width: 100%;
+            max-width: 580px;
+        }
+
+        .page-title {
+            font-size: 22px;
+            font-weight: 500;
+            color: #0f172a;
+            margin: 0 0 16px 0;
+        }
+
+        .form-card {
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+            border: 1px solid #e2e8f0;
+            padding: 32px;
+        }
+
+        .section-title {
+            font-size: 16px;
+            font-weight: 500;
+            color: #0f172a;
+            margin: 0 0 24px 0;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-label {
+            display: block;
+            font-size: 12px;
+            font-weight: 500;
+            color: #1e293b;
+            margin-bottom: 8px;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 12px 16px;
+            border: 1px solid #e2e8f0;
+            border-radius: 6px;
+            font-size: 13px;
+            color: #475569;
+            background: #f8fafc;
+            font-family: inherit;
+            box-sizing: border-box;
+            transition: border-color 0.2s, background-color 0.2s;
+        }
+
+        .form-input::placeholder {
+            color: #94a3b8;
+        }
+
+        .form-input:focus {
+            outline: none;
+            border-color: #534bdf;
+            background: #ffffff;
+            box-shadow: 0 0 0 3px rgba(83, 75, 223, 0.1);
+        }
+
+        .form-actions {
+            display: flex;
+            justify-content: flex-end;
+            gap: 12px;
+            margin-top: 32px;
+            padding-top: 24px;
+        }
+
+        .btn-cancel {
+            padding: 12px 24px;
+            border-radius: 6px;
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            color: #64748b;
+            font-size: 13px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .btn-cancel:hover {
+            background: #f1f5f9;
+            color: #334155;
+        }
+
+        .btn-save {
+            padding: 12px 32px;
+            border-radius: 6px;
+            background: #534bdf;
+            border: none;
+            color: #ffffff;
+            font-size: 13px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        .btn-save:hover {
+            background: #4338ca;
+        }
+    </style>
+</head>
+<body>
+
+<div class="page-container">
+    <h1 class="page-title">Ajouter un Nouveau Client</h1>
+
+    <div class="form-card">
+        <h2 class="section-title">Identification Client</h2>
+
+        <div class="form-group">
+            <label class="form-label">Code Client</label>
+            <input type="text" class="form-input" placeholder="Ex: CLI-006">
+        </div>
+
+        <div class="form-group">
+            <label class="form-label">Type Client</label>
+            <input type="text" class="form-input" placeholder="PHYSIQUE / MORALE">
+        </div>
+
+        <div class="form-group">
+            <label class="form-label">Nom Complet</label>
+            <input type="text" class="form-input" placeholder="Nom de famille ou Raison Sociale">
+        </div>
+
+        <div class="form-group">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-input" placeholder="contact@exemple.ma">
+        </div>
+
+        <div class="form-group">
+            <label class="form-label">Téléphone</label>
+            <input type="tel" class="form-input" placeholder="06 00 00 00 00">
+        </div>
+
+        <div class="form-group">
+            <label class="form-label">Ville</label>
+            <input type="text" class="form-input" placeholder="Ex: Casablanca">
+        </div>
+
+        <div class="form-actions">
+            <button class="btn-cancel">Annuler</button>
+            <button class="btn-save">ENREGISTRER</button>
+        </div>
+    </div>
+</div>
+
+<!-- ========================================== -->
+<!-- INTEGRATION APEX (FORM TEMPLATE) -->
+<!-- ========================================== -->
+<!--
+Dans APEX :
+Pour reproduire ce formulaire exact, le plus simple est d'appliquer ce CSS dans les CSS Inline de la page.
+Modifier les "Template Options" des Text Items APEX : 
+- Choisir "Hidden Label" pour désactiver les labels d'Apex, et utiliser du code HTML Static Content avec notre structure <div class="form-group"> ...
+ou :
+- Dans Universal Theme, les formulaires standards peuvent utiliser la classe CSS CSS Classes de l'item form-group et appliquer nos classes form-input et form-label au rendu.
+-->
+
+</body>
+</html>
