@@ -42,6 +42,33 @@ wwv_flow_imp_shared.create_list_item(
 ,p_list_item_current_type=>'COLON_DELIMITED_PAGE_LIST'
 ,p_list_item_current_for_pages=>'4'
 );
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(5032756671808646)
+,p_list_item_display_sequence=>40
+,p_list_item_link_text=>'Liste Clients'
+,p_list_item_link_target=>'f?p=&APP_ID.:10:&APP_SESSION.::&DEBUG.:::'
+,p_list_item_icon=>'fa-table'
+,p_list_item_current_type=>'COLON_DELIMITED_PAGE_LIST'
+,p_list_item_current_for_pages=>'10'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(5038045030868448)
+,p_list_item_display_sequence=>50
+,p_list_item_link_text=>'Detail Client'
+,p_list_item_link_target=>'f?p=&APP_ID.:11:&APP_SESSION.::&DEBUG.:::'
+,p_list_item_icon=>'fa-forms'
+,p_list_item_current_type=>'COLON_DELIMITED_PAGE_LIST'
+,p_list_item_current_for_pages=>'11'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(5047145415893209)
+,p_list_item_display_sequence=>60
+,p_list_item_link_text=>'Ajouter Client'
+,p_list_item_link_target=>'f?p=&APP_ID.:12:&APP_SESSION.::&DEBUG.:::'
+,p_list_item_icon=>'fa-forms'
+,p_list_item_current_type=>'COLON_DELIMITED_PAGE_LIST'
+,p_list_item_current_for_pages=>'12'
+);
 wwv_flow_imp.component_end;
 end;
 /
