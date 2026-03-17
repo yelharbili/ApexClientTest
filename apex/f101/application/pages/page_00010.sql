@@ -21,7 +21,7 @@ wwv_flow_imp_page.create_page(
 ,p_protection_level=>'C'
 ,p_page_component_map=>'03'
 ,p_last_updated_by=>'USERADMIN'
-,p_last_upd_yyyymmddhh24miss=>'20260317063400'
+,p_last_upd_yyyymmddhh24miss=>'20260317070812'
 );
 wwv_flow_imp_page.create_page_plug(
  p_id=>wwv_flow_imp.id(5033139853808715)
@@ -67,8 +67,11 @@ wwv_flow_imp_page.create_report_columns(
 ,p_column_display_sequence=>1
 ,p_column_heading=>'Nom'
 ,p_use_as_row_header=>'N'
+,p_column_link=>'f?p=&APP_ID.:11:&SESSION.::&DEBUG.::P11_ID_CLIENT:#ID_CLIENT#'
+,p_column_linktext=>'#NOM#'
 ,p_heading_alignment=>'LEFT'
 ,p_disable_sort_column=>'N'
+,p_derived_column=>'N'
 ,p_include_in_export=>'Y'
 );
 wwv_flow_imp_page.create_report_columns(

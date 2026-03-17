@@ -15,7 +15,7 @@ wwv_imp_workspace.create_remote_server(
  p_id=>wwv_flow_imp.id(4446348821650859)
 ,p_name=>'192-168-108-138-ords-orassuitpdb'
 ,p_static_id=>'192_168_108_138_ords_orassuitpdb'
-,p_base_url=>nvl(wwv_flow_application_install.get_remote_server_base_url('192_168_108_138_ords_orassuitpdb'),'http://192.168.108.138:8181/ords/orassuitpdb/')
+,p_base_url=>nvl(wwv_flow_application_install.get_remote_server_base_url('192_168_108_138_ords_orassuitpdb'),'http://192.168.108.145:8181/ords/orassuitpdb/')
 ,p_https_host=>nvl(wwv_flow_application_install.get_remote_server_https_host('192_168_108_138_ords_orassuitpdb'),'')
 ,p_server_type=>'WEB_SERVICE'
 ,p_ords_timezone=>nvl(wwv_flow_application_install.get_remote_server_ords_tz('192_168_108_138_ords_orassuitpdb'),'')

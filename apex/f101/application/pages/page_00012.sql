@@ -21,7 +21,7 @@ wwv_flow_imp_page.create_page(
 ,p_protection_level=>'C'
 ,p_page_component_map=>'17'
 ,p_last_updated_by=>'USERADMIN'
-,p_last_upd_yyyymmddhh24miss=>'20260317064804'
+,p_last_upd_yyyymmddhh24miss=>'20260317070652'
 );
 wwv_flow_imp_page.create_page_plug(
  p_id=>wwv_flow_imp.id(5047522481893212)
@@ -59,6 +59,18 @@ wwv_flow_imp_page.create_page_button(
 ,p_button_image_alt=>'Cancel'
 ,p_button_position=>'CLOSE'
 ,p_button_redirect_url=>'f?p=&APP_ID.:10:&APP_SESSION.::&DEBUG.:::'
+);
+wwv_flow_imp_page.create_page_button(
+ p_id=>wwv_flow_imp.id(5056721506999101)
+,p_button_sequence=>10
+,p_button_plug_id=>wwv_flow_imp.id(5048147477893220)
+,p_button_name=>'CREATE'
+,p_button_action=>'SUBMIT'
+,p_button_template_options=>'#DEFAULT#'
+,p_button_template_id=>wwv_flow_imp.id(4011471907837096)
+,p_button_is_hot=>'Y'
+,p_button_image_alt=>'Ajouter'
+,p_button_position=>'NEXT'
 );
 wwv_flow_imp_page.create_page_branch(
  p_id=>wwv_flow_imp.id(5055328985893273)

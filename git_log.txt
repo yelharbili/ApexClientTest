@@ -1,0 +1,10 @@
+*   05fd59b Merge PR #2: CRUD + Detail Client (Dev 2) - conflits resolus sur shared_components
+|\  
+| * f638d18 feat(dev2): ajout Pages 11 (Detail Client) + 12 (Ajouter Client) - Forms REST Data Source API_Clients
+* |   4e41c1f Merge PR #1: Liste Clients (Dev 1)
+|\ \  
+| |/  
+|/|   
+| * 7131564 feat(dev1): ajout Page 10 - Liste Clients (Classic Report + REST Data Source API_Clients)
+|/  
+* dd2796d feat: export initial app APEX 101 (GESTIONREF) + scripts DB + templates UI
